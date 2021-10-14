@@ -12,7 +12,7 @@ let ul
 /* funciones globales */
 
 function borrarRef(index){
- console.log("borrar", index)
+ console.log("borrarRef", index)
  
  refPersonales.splice(index,1)
  renderRefPerson()
@@ -22,6 +22,7 @@ function cambiarDia(index, el){
     let dia = parseInt(el.value)
     refPersonales[index].dia = dia
     console.log('cambiar Dia', index, dia)
+
 }
 function cambiarMes(index, el){
     let mes = parseInt(el.value)
@@ -118,6 +119,7 @@ function configurarListeners(){
             input.value = null
         }
     })
+    /* Borrado total de referencias */
     document.getElementById('btn-borrar-nombres').addEventListener('click',() => {
         console.log('btn-borrar-nombres')
         if(confirm('¿Desea borrar todas las referencias?')){

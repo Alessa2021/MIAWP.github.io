@@ -2,9 +2,9 @@
   "name": "ConCiencia Solar",
   "short_name": "CCS",
   "theme_color": "#3F51B5",
-  "background_color": "#000000",
+  "background_color": "#000",
   "display": "standalone",
-  "orientation": "portrait",
+  "orientation": "any",
   "scope": "/",
   "start_url": "/",
   "icons": [
